@@ -1,0 +1,7 @@
+
+1. What are block elements? 
+2. What were the new tags/elements brought in HTML5?
+3. Have you used PreCSS? What is it? 
+4. What is the difference between Margin and padding? 
+5. Is padding included in the element? What types of selectors are used in CSS?
+
