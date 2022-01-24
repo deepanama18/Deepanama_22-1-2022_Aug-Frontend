@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue
+
+        var setcolor = function (nums) {
+            let temp
+            for (let i = 0; i < nums.length; i++) {
+                for (let j = i; j < nums.length; j++) {
+                    if (nums[i] > nums[j]) {
+                        temp = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temp;
+                    }
+                }
+            }
+            console.log(nums)
+        }
+        setcolor([2, 0, 2, 1, 1, 0])
+
+
+        //Rotate the given array by n times toward right
+
+        function rightRotate(arr, n) {
+            for (let i = 0; i < n; i++) {
+                let last;
+                last = arr[arr.length - 1];
+                for (let j = arr.length - 1; j > 0; j--) {
+                    arr[j] = arr[j - 1];
+                }
+                arr[0] = last;
+            }
+            console.log(arr);
+        }
+        rightRotate([1, 2, 3, 4, 5], 3);
+    </script>
+</body>
+
+</html>
