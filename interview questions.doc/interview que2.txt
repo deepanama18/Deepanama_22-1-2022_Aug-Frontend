@@ -1,0 +1,5 @@
+Difference between null and undefined? 
+What are promises ?
+Javascript is single threaded or multiple threaded and asynchronous or synchronous? 
+How to center the div tag on dom?
+ What are callback functions?
